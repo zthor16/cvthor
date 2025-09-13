@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(bg.png); /* biar kotaknya lebih kelihatan */
+}
+
+.cv-box {
+  width: 800px;
+  margin: 30px auto;
+  background: white;
+  border-top: 50px solid gray;    /* tebal di atas */
+  border-bottom: 50px solid gray; /* tebal di bawah */
+  border-left: 4px solid gray;    /* tipis di kiri */
+  border-right: 4px solid gray;   /* tipis di kanan */
+  padding: 30px;
+  border-radius: 15px;  
+
+  /* Outline putih langsung nempel */
+  outline: 8px solid white;
+  outline-offset: 0;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25); /* bayangan tipis */
+}
+
+.cv-header {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cv-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cv-info {
+  flex: 2;
+}
+
+.cv-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-frame {
+  border: 20px solid gray; /* bingkai abu */
+  border-radius: 15px;     /* sudut tumpul */
+  display: inline-block;   /* biar sesuai isi */
+}
+
+.photo-frame img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+
+  display: block;      /* hilangin space putih */
+  margin: 0;           /* hilangin celah default */
+  border: none;        /* hilangin garis hitam */
+}
+
+
+.section {
+  margin-top: 20px;
+}
+
+.section h3 {
+  margin-bottom: 8px;
+  border-bottom: 1px solid #aaa;
+  display: inline-block;
+}
+
+.section h2 {
+    margin-bottom: 8px;
+  border-bottom: 1px solid #aaa;
+  display: inline-block;
+}
